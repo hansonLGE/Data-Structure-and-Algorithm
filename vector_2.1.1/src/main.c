@@ -1,3 +1,6 @@
+/*
+basic operation for vector, such as insert and delete.
+*/
 #include <stdio.h>
 #include <stdlib.h>
 
@@ -5,6 +8,7 @@
 
 void create(int* vector, int n) {
 	for (int i = 0; i < n; i++) {
+		printf("input a int data:");
 		scanf("%d", &vector[i]);
 	}
 }
@@ -56,14 +60,20 @@ void output(int* vector, int n) {
 
 int main(int argc, char** argv) {
 	int array[N + 1];
+	int x = 0;
 
+	printf("create a vector.\n");
 	create(array, N);
 	//insert(array, 3, 10);
 	//output(array, N+1);
 
 	//delete(array, 2);
 	//output(array, N - 1);
-	find(array, 6);
+
+	printf("find a data.\n");
+	printf("input a int data:");
+	scanf("%d", &x);
+	find(array, x);
 
 	return 0;
 }

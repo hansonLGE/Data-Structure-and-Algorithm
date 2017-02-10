@@ -1,3 +1,6 @@
+/*
+Circular Queue: eng,deq
+*/
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
@@ -7,11 +10,11 @@
 typedef struct queue {
 	int qu[MAXSIZE];
 	int front;
-	int tail;
+	int rear;
 } queue;
 
 int is_empty(queue* qu) {
-	if (qu->front == qu->tail) {
+	if (qu->front == qu->rear) {
 		return 1;
 	}
 
@@ -19,12 +22,12 @@ int is_empty(queue* qu) {
 }
 
 void enq(queue* qu, int value){
-	if ((qu->tail + 1) % MAXSIZE == qu->front) {
+	if ((qu->rear + 1) % MAXSIZE == qu->front) {
 		printf("the queue is enough.\n");
 	}
 	else {
-		qu->tail = (qu->tail + 1) % MAXSIZE;
-		qu->qu[qu->tail] = value;
+		qu->rear = (qu->rear + 1) % MAXSIZE;
+		qu->qu[qu->rear] = value;
 	}
 }
 void deq(queue* qu, int* ptr_data){
@@ -43,7 +46,9 @@ int main(int argc, char** argv){
 	queue qu;
 	memset(&qu, 0, sizeof(qu));
 
+	printf("create a circular queue(size is 5).\n");
 	for (int i = 0; i < 5; i++) {
+		printf("enqueue a int data:");
 		scanf("%d", &data);
 		enq(&qu, data);
 	}

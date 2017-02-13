@@ -1,5 +1,12 @@
+/*
+please write a function that deletes some elements which range from min to max. Note：we need to pay attention to the efficiency.
+
+编写一个函数，删除多个元素，其值在（min, max）之间，要求高效率。
+*/
 #include <stdio.h>
 #include <stdlib.h>
+
+#define M 32
 
 int delete(int* vector, int n, int min, int max){
 	int i = 0, k = 0;
@@ -25,19 +32,23 @@ void output(int* vector, int n) {
 }
 
 int main(int argc, char** argv){
-	int vector[32] = { 0 };
-
+	int vector[M] = { 0 };
 	int n = 0;
+	int min = 0;
+	int max = 0;
 
-	printf("please input data size:");
+	printf("please input vector size:");
 	scanf("%d", &n);
 
 	for (int i = 0; i < n; i++) {
+		printf("input a int element:");
 		scanf("%d", &vector[i]);
-
 	}
 
-	int m = delete(vector, n, 6, 15);
+	printf("please input the interval(min, max):");
+	scanf("%d %d", &min, &max);
+
+	int m = delete(vector, n, min, max);
 
 	output(vector, m);
 	return 0;

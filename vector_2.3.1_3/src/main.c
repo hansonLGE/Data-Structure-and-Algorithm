@@ -1,3 +1,8 @@
+/*
+Please write a function that a vector A is divided into two parts. The one part has elements which are more than 0, while elements in another part are less than 0.
+
+编写一个函数将一个向量A（有n个元素且任何元素均不为0）分拆成二个向量，使A中大于0的元素存放在B中，小于0的元素存放在C中。
+*/
 #include <stdio.h>
 #include <stdlib.h>
 
@@ -32,10 +37,11 @@ int main(int argc, char** argv){
 	int vec_b[8] = { 0 };
 
 	int n = 0;
-	printf("please input data size:");
+	printf("please input vector size:");
 	scanf("%d", &n);
 
 	for (int i = 0; i < n; i++){
+		printf("input a int element:");
 		scanf("%d", &vector[i]);
 	}
 

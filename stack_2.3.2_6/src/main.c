@@ -1,3 +1,8 @@
+/*
+验证表达式是否正确。
+
+Please write a function to check a expression whether it is correct or not.
+*/
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
@@ -76,7 +81,7 @@ int main(int argc, char** argv) {
 	stack st;
 	memset(&st, 0, sizeof(st));
 
-	printf("please input exp queue:");
+	printf("please input a expression:");
 	scanf("%s", exp);
 
 	if (correct(&st, exp)) {

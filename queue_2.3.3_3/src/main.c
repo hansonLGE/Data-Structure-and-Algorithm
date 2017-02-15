@@ -1,9 +1,14 @@
+/*
+Circular Queue：enqueue & dequeue
+
+循环队列：入队列和出队列
+*/
 #include <stdlib.h>
 #include <stdio.h>
 #include <string.h>
 
 #define MAXSIZE 100
-typedef struct queue {
+typedef struct _queue {
 	int qu[MAXSIZE];
 	int front;
 	int rear;
@@ -35,9 +40,14 @@ int dequeue(queue* qu) {
 
 int main(int argc, char** argv) {
 	queue qe;
+	int x = 0;
+
 	memset(&qe, 0, sizeof(qe));
 
-	enqueue(&qe, 11);
+	printf("input a int element:");
+	scanf("%d", &x);
+
+	enqueue(&qe, x);
 	int value = dequeue(&qe);
 
 	printf("de queue a value:%d\n", value);

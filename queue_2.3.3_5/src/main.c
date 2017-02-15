@@ -1,3 +1,7 @@
+/*
+如果用一个循环数组qu[0, m0-1]表示队列时，该队列只有一个头指针front，不设置队尾指针，而改置计数器count用以记录队列中节点的个数。
+编写实现按队列的5个基本运算：makenull, isEmpty, pop, enqueue, dequeue
+*/
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>

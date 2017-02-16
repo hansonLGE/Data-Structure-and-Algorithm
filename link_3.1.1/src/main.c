@@ -1,3 +1,12 @@
+/*
+signal link operation
+
+1 输入一系列整数，以0标志结束，将这些整数作为data域建立一个单链表(单链表或循环单链表) ；
+2 在已经建立好的单链表(单链表或循环单链表)中查找元素；
+3 计算已经建立好的单链表(单链表或循环单链表)；
+4 在已经建立好的单链表(单链表或循环单链表)中插入元素；
+5 在已经建立好的单链表(单链表或循环单链表)中删除元素。
+*/
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
@@ -13,7 +22,7 @@ node* create() {
 	int cycle = 1;
 
 	while (cycle) {
-		printf("input a node value:");
+		printf("input a node data:");
 		scanf("%d", &x);
 
 		if (x == 0) {
@@ -39,6 +48,9 @@ node* create() {
 	return head;
 }
 
+/*
+单链表查找
+*/
 void find(node* ptr, int x) {
 	node* p = ptr;
 
@@ -54,6 +66,9 @@ void find(node* ptr, int x) {
 	}
 }
 
+/*
+循环单链表查找
+*/
 void find1(node* ptr, int x) {
 	node* p = ptr;
 
@@ -76,6 +91,9 @@ void find1(node* ptr, int x) {
 
 }
 
+/*
+单链表长度
+*/
 int length(node* ptr) {
 	node* p = ptr;
 	int cnt = 0;
@@ -88,6 +106,9 @@ int length(node* ptr) {
 	return cnt;
 }
 
+/*
+循环单链表长度
+*/
 int length1(node* ptr) {
 	node* p = ptr;
 	int cnt = 0;
@@ -106,6 +127,9 @@ int length1(node* ptr) {
 	return cnt;
 }
 
+/*
+插入元素
+*/
 node* insert(node* ptr, int i, int x) {
 	int j = 0;
 	node* p = NULL;
@@ -138,6 +162,9 @@ node* insert(node* ptr, int i, int x) {
 	return ptr;
 }
 
+/*
+删除元素
+*/
 node* delete (node* ptr, int x) {
 	node* p = ptr;
 	node* q = NULL;
@@ -174,8 +201,6 @@ void output(node* ptr) {
 
 	printf("\n");
 }
-
-
 
 int main(int argc, char** argv) {
 	int x = 0;

@@ -1,3 +1,12 @@
+/*
+double link operation
+
+1 输入一系列整数，以0标志结束，将这些整数作为data域建立一个双向链表(双向链表或循环双向链表) ；
+2 在已经建立好的双向链表(双向链表或循环双向链表)中查找元素；
+3 计算已经建立好双向链表(双向链表或循环双向链表)；
+4 在已经建立好的双向链表(双向链表或循环双向链表)中插入元素；
+5 在已经建立好的双向链表(双向链表或循环双向链表)中删除元素。
+*/
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
@@ -13,7 +22,7 @@ dnode* create() {
 	int x = 0;
 
 	while (cycle) {
-		printf("input a value:");
+		printf("input a node data:");
 		scanf("%d", &x);
 		if (x == 0) {
 			cycle = 0;
@@ -157,8 +166,7 @@ dnode* delete(dnode* ptr, int x) {
 void output(dnode* ptr) {
 	dnode* p = ptr;
 
-	while (p)
-	{
+	while (p) {
 		printf("%d ", p->data);
 		p = p->right;
 	}
@@ -172,7 +180,7 @@ int main(int argc, char** argv){
 	int loc = 0;
 
 #if 1
-	printf("create a single double link\n");
+	printf("create a double link\n");
 	ptr = create();
 
 	output(ptr);

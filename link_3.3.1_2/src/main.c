@@ -1,3 +1,8 @@
+/*
+已知一个单链表，编写一个函数复制该单链表。
+
+There is a signal link, please write a function to copy it.
+*/
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
@@ -13,7 +18,7 @@ node* create() {
 	int x = 0;
 
 	while (cycle) {
-		printf("input a node value");
+		printf("input a node data:");
 		scanf("%d", &x);
 
 		if (x == 0) {

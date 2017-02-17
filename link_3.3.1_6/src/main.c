@@ -1,3 +1,10 @@
+/*
+There are two singal links in which the nodes are in an ascending order. Please write a function to copy the two links to one link
+in which the nodes are alse in an ascending order.
+
+存在两个单链表，其结点均按照数值域从小到大排序，编写一个函数，合并该两个链表，其结点保持按照数值域从小到大排序。
+*/
+
 #include <stdio.h>
 #include <stdlib.h>
 

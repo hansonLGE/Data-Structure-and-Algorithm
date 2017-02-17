@@ -1,3 +1,8 @@
+/*
+There is a signal link which has one node at least and a pointer pointing to head. Please write a function to invert the link.
+
+有一个单链表L（至少有一个结点），其头节点指针为head，编写一个函数将L逆置。
+*/
 #include <stdio.h>
 #include <stdlib.h>
 
@@ -6,13 +11,16 @@ typedef struct _node {
 	struct _node* next;
 } node;
 
+/*
+创建一个单链表
+*/
 void create(node** head){
 	node* s, *p = NULL;
 	int cycle = 1;
 	int x = 0;
 
 	while (cycle) {
-		printf("input a node value:");
+		printf("input a node data:");
 		scanf("%d", &x);
 
 		if (x == 0) {

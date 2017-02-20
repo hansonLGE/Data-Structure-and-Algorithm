@@ -1,3 +1,6 @@
+/*
+已知两个单链表A和B，其头指针分别为heada和headb，编写一个函数在单链表A中删除自第i个元素起的公len个元素，然后将他们插入一到单链表B的第位置之前。
+*/
 #include <stdio.h>
 #include <stdlib.h>
 
@@ -60,6 +63,8 @@ node* del(node* head, int i, int len) {
 
 		head = p->next;
 		p->next = NULL;
+
+		ptr = head;
 	}
 	else {
 		k = 1;

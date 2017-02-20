@@ -1,3 +1,8 @@
+/*
+Please write a function to swap the node p and the node located after node p. 
+
+编写一个函数交换单链表中p所指向的位置和其后续位置上的两个结点，定义head指向单链表的表头，p为指向该链表中的某一个结点。
+*/
 #include <stdio.h>
 #include <stdlib.h>
 
@@ -82,7 +87,7 @@ int main(int argc, char** argv) {
 	create(&head);
 	output(head);
 
-	printf("please input a value:");
+	printf("please input a node data:");
 	scanf("%d", &x);
 
 	head = swap(head, x);

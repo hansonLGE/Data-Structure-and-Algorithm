@@ -1,3 +1,7 @@
+/*
+There are two circular signal links, Please write a function to unsion the wwo links that is still circular.
+已经两个循环单链表A和B，编写一个函数合并A和B，使其依然是循环单链表。
+*/
 #include <stdio.h>
 #include <stdlib.h>
 

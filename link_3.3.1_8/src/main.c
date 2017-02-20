@@ -1,3 +1,9 @@
+/*
+There is a signal link which is in ascending order. A pointer points to it's head, please write a function to insert a node to the link
+and the link is still in ascending order.
+
+有一个有序单链表（从小到大）。表头指针为head，编写一个函数向该链表中插入一个元素为x的结点，使插入后的链表依然有序。
+*/
 #include <stdio.h>
 #include <stdlib.h>
 
@@ -78,7 +84,7 @@ int main(int argc, char** argv) {
 	create(&head);
 	output(head);
 
-	printf("input a new value:");
+	printf("insert a new value:");
 	scanf("%d", &x);
 
 	head = insert_order(head, x);

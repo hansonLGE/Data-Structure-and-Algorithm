@@ -1,3 +1,9 @@
+/*
+There are two single links named A and B in which all elements are in ascending order. Please write a function to get the intersection
+between A and B, the intersection is called link C in which elements are still in ascending order.
+
+已知两个单链表A与B分别表示两个集合，其元素递增排序。编写一个函数求出A和B的交集C，要求C同样以元素值递增的单链表形式存储。
+*/
 #include <stdio.h>
 #include <stdlib.h>
 

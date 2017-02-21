@@ -1,3 +1,9 @@
+/*
+There are two single links named A and B, A={a1, a2,..., an}、B={b1, b2, ..., bn}. Please write a function ti merge them to the link C,
+C={a1, b1,a2,b2,...,an,bn}.
+
+有两个具有相同结点个数的链表A和B，A={a1, a2,..., an}、B={b1, b2, ..., bn},编写一个函数将其合并成一个链表C，C={a1, b1,a2,b2,...,an,bn}.
+*/
 #include <stdio.h>
 #include <stdlib.h>
 

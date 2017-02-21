@@ -1,3 +1,10 @@
+/*
+Please write a function to split the link A into two signal links named A and B. The nodes in link A are located by odd number 
+in original sequence while the nodes in link B are located by even number.
+
+编写一个函数将一个头结点指针为a的单链表A分解成两个单链表A和B，其头结点指针分别为a和b，使得A链表中含有原链表A中序号为奇数的元素，而B中含有
+原链表A中序号为偶数的元素，且保持原来的相对顺序。
+*/
 #include <stdio.h>
 #include <stdlib.h>
 
@@ -13,7 +20,7 @@ void create(node** head) {
 
 	while (cycle)
 	{
-		printf("inoput a node data:");
+		printf("input a node data:");
 		scanf("%d", &x);
 
 		if (x == 0) {
@@ -74,7 +81,7 @@ int main(int argc, char** argv) {
 	create(&heada);
 	output(heada);
 
-	printf("separte the link.\n");
+	printf("split the link.\n");
 	disa(heada, &headb);
 	output(heada);
 	output(headb);

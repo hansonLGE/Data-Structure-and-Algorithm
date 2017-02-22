@@ -1,3 +1,9 @@
+/*
+There is a single link in which all elements are in ascending order. Please write a function to delete the same elements to keep one nodes in
+the link.
+
+有一个单链表，其结点的元素值以非递减有序排序，编写一个函数删除该链表中多余的元素值相同的结点。
+*/
 #include <stdio.h>
 #include <stdlib.h>
 

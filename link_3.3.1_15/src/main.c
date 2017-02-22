@@ -1,3 +1,9 @@
+/*
+There is a cyciral single link which has not both head pointer and head node and only has a point pointting certain node P.
+Please write a function to delete the prior node of P.
+
+假设在长度大于1的循环单链表中，即无头结点，也无头指针，只有某个结点的指针，编写一个函数删除该结点的前驱结点。
+*/
 #include <stdio.h>
 #include <stdlib.h>
 
@@ -80,7 +86,7 @@ int main(int argc, char** argv) {
 	create(&head);
 	output(head);
 
-	printf("please input the node value:");
+	printf("please input the node data:");
 	scanf("%d", &x);
 	del(head, x);
 	output(head);

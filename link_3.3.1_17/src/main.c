@@ -1,3 +1,9 @@
+/*
+There are two single links named A and B in which all elements are in ascending order. Please write a function to merge them to one link
+in which all elements are still in ascending order, and extra nodes can not be created.
+
+存在两个单链表A和B，其结点数值均非递减，编写一个函数合并A与B，依然保持非递减。
+*/
 #include <stdio.h>
 #include <stdlib.h>
 

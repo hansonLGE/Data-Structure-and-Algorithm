@@ -1,3 +1,8 @@
+/*
+double circual link: the first node and second node would be swaped.
+
+双向循环链表：交换第一个与第二个结点
+*/
 #include <stdio.h>
 #include <stdlib.h>
 
@@ -79,6 +84,7 @@ int main(int argc, char** argv) {
 	create(&head);
 	output(head);
 
+	printf("swap:\n");
 	head = swap(head);
 	output(head);
 

@@ -1,8 +1,14 @@
+/*
+double circular link: delete a node
+
+Ë«ÏòÁ´±í:É¾³ý²Ù×÷
+*/
+
 #include <stdio.h>
 #include <stdlib.h>
 
 typedef struct _dnode{
-	int key;
+	int data;
 	struct _dnode* left;
 	struct _dnode* right;
 } dnode;
@@ -15,7 +21,7 @@ void create(dnode** head) {
 
 	while (cycle)
 	{
-		printf("input a node key:");
+		printf("input a node data:");
 		scanf("%d", &x);
 
 		if (x == 0) {
@@ -23,7 +29,7 @@ void create(dnode** head) {
 		}
 		else {
 			s = (dnode*)malloc(sizeof(dnode));
-			s->key = x;
+			s->data = x;
 			s->left = s->right = NULL;
 
 			if (p == NULL) {
@@ -45,11 +51,11 @@ void create(dnode** head) {
 void output(dnode* head) {
 	dnode* ptr = head;
 
-	printf("%d ", ptr->key);
+	printf("%d ", ptr->data);
 
 	ptr = ptr->right;
 	while (ptr != head) {
-		printf("%d ", ptr->key);
+		printf("%d ", ptr->data);
 		ptr = ptr->right;
 	}
 
@@ -59,7 +65,7 @@ void output(dnode* head) {
 void delnode(dnode* head, int x) {
 	dnode* ptr = head;
 
-	while (ptr->key != x) {
+	while (ptr->data != x) {
 		ptr = ptr->right;
 	}
 
@@ -79,7 +85,7 @@ int main(int argc, char** argv) {
 	create(&head);
 	output(head);
 
-	printf("please input a delte node key:");
+	printf("please input a node data that will be deleted:");
 	scanf("%d", &x);
 
 	delnode(head, x);

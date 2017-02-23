@@ -1,3 +1,9 @@
+/*
+There is a circular double link, a certain node is pointed by the pointer P and The pointer Q points the right node of P.
+Please write a function to swap p an q.
+
+设有一个循环双链表，其中有一个结点的指针为p，编写一个函数将p与其右边的一个结点q进行交换。
+*/
 #include <stdio.h>
 #include <stdlib.h>
 

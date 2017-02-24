@@ -1,3 +1,8 @@
+/*
+There are two strings called s1 and s2. Please write a function to combine s1 with s2.
+
+将2个字符串s1和s2，合并为一个字符串。
+*/
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
@@ -34,11 +39,11 @@ int main(int argc, char** argv) {
 	memset(&r1, 0, sizeof(orderstring));
 	memset(&r2, 0, sizeof(orderstring));
 
-	printf("please inoput the first string value:");
+	printf("please input the first string:");
 	scanf("%s", r1.vec);
 	r1.len = strlen(r1.vec);
 
-	printf("please inoput the second string value:");
+	printf("please input the second string:");
 	scanf("%s", r2.vec);
 	r2.len = strlen(r2.vec);
 

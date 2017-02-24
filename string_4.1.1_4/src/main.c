@@ -1,3 +1,6 @@
+/*
+把串r1插入到串r中第i个字符开始的位置上。
+*/
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
@@ -14,7 +17,7 @@ void insert(char* ptr_r, char* ptr_r1, int i) {
 	}
 	else {
 		for (k = len_r - 1; k >= i-1; k--) {
-			ptr_r[len_r1 + k] = ptr_r[k];
+			ptr_r[k + len_r1] = ptr_r[k];
 		}
 
 		for (k = 0; k < len_r1; k++) {

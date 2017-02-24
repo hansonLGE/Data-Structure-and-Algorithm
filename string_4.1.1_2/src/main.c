@@ -1,3 +1,6 @@
+/*
+从串r1中的第i个字符开始，把连续j个字符组成的字串赋给r.
+*/
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
@@ -18,7 +21,7 @@ int main(int argc, char** argv) {
 	int i = 0;
 	int j = 0;
 
-	printf("please input the string value:");
+	printf("please input the string:");
 	scanf("%s", r1);
 
 	printf("input the location %d and count %d for substring:");

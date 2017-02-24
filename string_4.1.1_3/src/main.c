@@ -1,3 +1,6 @@
+/*
+从串r中删除从第i个字符开始的，长度为j的一个字串。
+*/
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
@@ -12,8 +15,7 @@ void del_substring(char* ptr_r, int i, int j) {
 	}
 	else {
 		for (int k = i + j - 1; k < len; k++) {
-			ptr_r[i-1] = ptr_r[k];
-			i++;
+			ptr_r[k-j] = ptr_r[k];
 		}
 
 		len = len - j;

@@ -1,3 +1,8 @@
+/*
+Please write a function to replace all ch1 with ch2.
+
+将串r种所有值为ch1的字符替换为ch2。
+*/
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
@@ -20,17 +25,18 @@ int main(int argc, int argv) {
 	char ch2 = 0;
 
 	printf("please input a string:");
-	scanf("%s\n", vec);
+	scanf("%s", vec);
 
-	//printf("input a character in the string and a instead character for it:");
-	ch1 = getchar();
+	printf("input a character in the string:");
+	//ch1 = getchar();
 	//while ((ch1 = getchar()) != '\n')
-		printf("ch1:%c\n", ch1);
+	scanf(" %c", &ch1);
 
-	ch2 = getchar();
-	printf("ch2:%c\n", ch2);
-	//printf("ch1:%c---ch2:%c\n", ch1, ch2);
-	//trans(vec, ch1, ch2);
-	//printf("the trans value is %s\n", vec);
+	printf("input a instead character:");
+	//ch2 = getchar();
+	scanf(" %c", &ch2);
+
+	trans(vec, ch1, ch2);
+	printf("the trans value is %s\n", vec);
 	return 0;
 }

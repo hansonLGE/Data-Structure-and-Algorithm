@@ -1,3 +1,9 @@
+/*
+There are two strings named s1 and s2. Please write a functon to replace the substring in s1 with s2. Note: the substring is got by the 
+elements between location i and j, and the i and j can not be included.
+
+采用顺序结构存储字符串s1，编写一个函数将s1中第i位置到第j位置之间的子串（不包括i和j的位置）替换为另一个字符串s2。
+*/
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>

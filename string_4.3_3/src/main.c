@@ -1,3 +1,8 @@
+/*
+please write a function that deletes all elements in which the value is equal to ch. Note：we need to pay attention to the efficiency.
+
+对于顺序结构存储的串，编写一个函数删除其值等于ch的所有字符，要求具有较高效率。
+*/
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>

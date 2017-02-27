@@ -1,3 +1,8 @@
+/*
+Please write a function to compare the two strings named x and y if x is equal to y.
+
+若x和y是两个采用顺序结构存储的串，编写一个函数比较两个字符串是否相等。
+*/
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>

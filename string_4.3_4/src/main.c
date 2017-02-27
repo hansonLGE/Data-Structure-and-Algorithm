@@ -1,3 +1,8 @@
+/*
+Please write a function to delete elements that the i refer to start location and j is described by count deleted.
+
+采用顺序结构存储串s，编写一个函数删除s中第i个字符开始的j个字符。
+*/
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>

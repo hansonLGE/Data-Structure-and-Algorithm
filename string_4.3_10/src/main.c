@@ -1,3 +1,8 @@
+/*
+Please write a function to get the count of a sub string in a string. The count woould be 0 if the sub string does not exist.
+
+采用顺序结构存储，编写一个函数计算一个子串在一个字符串中出现的次数，如果该子串不出现则为0。
+*/
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>

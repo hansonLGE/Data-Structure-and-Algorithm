@@ -1,3 +1,8 @@
+/*
+Please write a function substring(s1, s2) to make a decision if s1 contains s2.
+
+采用顺序结构存储串，编写一个函数substring(s1, s2),用于判定s2是否是s1的子串。
+*/
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>

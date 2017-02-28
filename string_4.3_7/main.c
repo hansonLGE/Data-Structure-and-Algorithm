@@ -1,3 +1,8 @@
+/*
+Please write a function to get the index and length of the sub string that is the longest repeated substring.
+
+采用顺序结构存储串，编写一个函数求串s中出现的第一个最长重复子串的下标和长度。
+*/
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
@@ -10,7 +15,7 @@ void maxsubstr(char* str, int* idx, int* length) {
 	int j = 0;
 	int k = 0;
 
-	for (int i = 0; i < len; i++) {
+	for (i = 0; i < len; i++) {
 		j = i + 1;
 		while (j < len) {
 			if (str[i] == str[j]) {

@@ -1,3 +1,8 @@
+/*
+There are two strings named s and t. Please write a function to get lagest common substring for them.
+
+采用顺序结构存储，编写一个函数，求串s和串t的一个最长公共子串。
+*/
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
@@ -11,7 +16,7 @@ void maxcomstr(char* str_s, char* str_t, int* idx, int* length) {
 	int j = 0;
 	int k = 0;
 
-	for (int i = 0; i < len_s; i++) {
+	for (i = 0; i < len_s; i++) {
 		j = 0;
 		while (j < len_t) {
 			if (str_s[i] == str_t[j]) {

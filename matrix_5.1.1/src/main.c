@@ -1,3 +1,8 @@
+/*
+matrix operation:transposition, add, multiplication.
+
+矩阵运算：转置、相加、乘法
+*/
 #include <stdio.h>
 #include <stdlib.h>
 

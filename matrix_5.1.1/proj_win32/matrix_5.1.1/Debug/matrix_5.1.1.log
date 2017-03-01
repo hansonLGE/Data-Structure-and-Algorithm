@@ -1,4 +1,4 @@
-﻿生成启动时间为 2016/10/19 11:09:43。
+﻿生成启动时间为 2017/3/1 10:05:30。
      1>项目“D:\visual studio\projects\matrix_5.1.1\proj_win32\matrix_5.1.1\matrix_5.1.1.vcxproj”在节点 2 上(Build 个目标)。
      1>ClCompile:
          D:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _LIB /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TC /analyze- /errorReport:prompt ..\..\src\main.c
@@ -10,4 +10,4 @@
 
 生成成功。
 
-已用时间 00:00:00.61
+已用时间 00:00:03.38

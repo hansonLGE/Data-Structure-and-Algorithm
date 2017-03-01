@@ -1,3 +1,6 @@
+/*
+有数组A[4][4]，编写一个函数计算两条对角线元素的乘积。
+*/
 #include <stdio.h>
 #include <stdlib.h>
 
@@ -9,6 +12,7 @@ int main(int argc, char** argv) {
 
 	for (int i = 0; i < M; i++) {
 		for (int j = 0; j < M; j++) {
+			printf("input a int data:");
 			scanf("%d", &mat[i][j]);
 		}
 	}

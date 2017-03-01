@@ -1,3 +1,8 @@
+/*
+Please write a function to reverse a integer. For example, 582 would be reversed to 285.
+
+编写一个函数，将整数逆序输出。比如，582输出为285。
+*/
 #include <stdio.h>
 #include <stdlib.h>
 
@@ -12,7 +17,7 @@ void reverse(int n) {
 int main(int argc, char** argv) {
 	int x = 0;
 
-	printf("input a interger data:");
+	printf("input a integer:");
 	scanf("%d", &x);
 
 	reverse(x);

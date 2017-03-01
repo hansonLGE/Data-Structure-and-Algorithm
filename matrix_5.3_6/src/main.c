@@ -1,3 +1,9 @@
+/*
+Saddlepoint
+
+如果矩阵A中存在这样的一个元素A[i][j]满足条件：A[i][j]是第i行中值最小的元素，且又是第j列中值最大的元素，则称之为矩阵的一个马鞍点。
+编写一个函数计算m*n的矩阵A的所有马鞍点。
+*/
 #include <stdio.h>
 #include <stdlib.h>
 

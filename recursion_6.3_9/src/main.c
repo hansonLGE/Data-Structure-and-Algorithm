@@ -1,3 +1,8 @@
+/*
+Please write a function to get the gcd of two integers.
+
+求两个正整数m和n的最大公约数gcd.
+*/
 #include <stdio.h>
 #include <stdlib.h>
 
@@ -22,7 +27,7 @@ int main(int argc, char** argv) {
 	int x = 0;
 	int y = 0;
 
-	printf("please input two interger data:\n");
+	printf("please input two integers:\n");
 	printf("x = ");
 	scanf("%d", &x);
 	printf("y = ");

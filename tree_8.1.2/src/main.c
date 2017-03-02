@@ -1,3 +1,8 @@
+/*
+binary tree: travel、thread by inorder、depth.
+
+二叉树相关操作：遍历、中序线索化、深度。
+*/
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
@@ -10,25 +15,21 @@ typedef struct _bnode {
 
 static bnode* pre = NULL;
 
-bnode* create_bit_tree() {
+void create_bit_tree(bnode** ptr) {
 	int x = 0;
-	bnode* ptr;
 
 	printf("input a data(-1 means NULL for child):");
 	scanf("%d", &x);
 	if (x == -1) {
-		ptr = NULL;
+		*ptr = NULL;
 	}
 	else {
-		ptr = (bnode*)malloc(sizeof(bnode));
-		memset(ptr, 0, sizeof(bnode));
+		*ptr = (bnode*)malloc(sizeof(bnode));
 
-		ptr->data = x;
-		ptr->left = create_bit_tree();
-		ptr->right = create_bit_tree();
+		(*ptr)->data = x;
+		create_bit_tree(&((*ptr)->left));
+		create_bit_tree(&((*ptr)->right));
 	}
-
-	return ptr;
 }
 
 void pre_order(bnode* ptr) {
@@ -104,7 +105,7 @@ int main(int argc, char** argv) {
 	bnode* head = NULL;
 
 	printf("create a tree(example: 1 2 -1 3 -1 -1 4 -1 5 -1 -1):\n");
-	head = create_bit_tree();
+	create_bit_tree(&head);
 
 	printf("output the tree by pre_order:");
 	pre_order(head);

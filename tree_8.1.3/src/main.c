@@ -1,3 +1,8 @@
+/*
+Binary Sort Tree: create、search、delete.
+
+二叉排序树：建立、查找、删除。
+*/
 #include <stdio.h>
 #include <stdlib.h>
 
@@ -25,7 +30,7 @@ bnode* search(bnode* ptr, int x) {
 
 void delnode(bnode* head, int x) {
 	bnode *p = head, *q = NULL;
-	bnode *s;
+	bnode *r;
 
 	while (p != NULL && p->data != x) {
 		if (x < p->data) {
@@ -41,57 +46,41 @@ void delnode(bnode* head, int x) {
 	if (p == NULL) {
 		printf("failed to find the node.\n");
 	}
-	else {
-		if (p->left == NULL && p->right == NULL) {
-			if (q->left == p) {
-				q->left = NULL;
-			}
-			else if (q->right == p) {
-				q->right = NULL;
-			}
-
-			free(p);
+	else if(p->left == NULL){
+		if (q == NULL) {
+			head = p->right;
 		}
-		else if (p->left != NULL && p->right == NULL) {
-			if (q->left == p) {
-				q->left = p->left;
-			}
-			else if (q->right == p) {
-				q->right = p->left;
-			}
-
-			free(p);
-		}
-		else if (p->left == NULL && p->right != NULL) {
-			if (q->left == p) {
-				q->left = p->right;
-			}
-			else if (q->right == p) {
-				q->right = p->right;
-			}
-
-			free(p);
+		else if (q->left == p) {
+			q->left = p->right;
 		}
 		else {
-			s = p->left;
-			while (s->right != NULL) {
-				q = s;
-				s = s->right;
-			}
-
-			p->data = s->data;
-			if (q != p) {
-				q->right = s->left;
-			}
-			else {
-				q->left = s->left;
-			}
-
-			free(s);
+			q->right = p->right;
 		}
 
+		free(p);
+		p = NULL;
 	}
+	else {
+		r = p->left;
+		while (r->right != NULL) {
+			r = r->right;
+		}
 
+		r->right = p->right;
+
+		if (q == NULL) {
+			head = p->left;
+		}
+		else if (q->left == p) {
+			q->left = p->left;
+		}
+		else {
+			q->right = p->left;
+		}
+
+		free(p);
+		p = NULL;
+	}
 }
 
 void insert(bnode** ptr, bnode* s) {
@@ -147,7 +136,7 @@ int main(int argc, char** argv) {
 	bnode* ptr = NULL;
 	int x = 0;
 
-	printf("create a BST(example 62,88,58,47,35,73,51,99,37,93):\n");
+	printf("create a BST(example 62,88,58,47,35,73,51,99,37,93,-1):\n");
 	create(&head);
 	in_order(head);
 

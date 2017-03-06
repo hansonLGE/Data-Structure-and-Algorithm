@@ -1,3 +1,8 @@
+/*
+Please write functions to travel the binary tree by non-recursive, such as preorder、inorder and postorder.
+
+非递归遍历二叉树（前序，中序，后续）
+*/
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>

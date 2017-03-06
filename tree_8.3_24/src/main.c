@@ -1,3 +1,8 @@
+/*
+Please write a function to get the layer of a node.
+
+二叉树指定结点的层数。
+*/
 #include <stdio.h>
 #include <stdlib.h>
 

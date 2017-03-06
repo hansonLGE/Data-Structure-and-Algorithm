@@ -1,3 +1,8 @@
+/*
+There is a binary tree which is stored by link. Please write a function to get the path between root and p that points a certain node.
+
+假设二叉树采用链接存储结构进行存储，root指向根结点，p所指结点为任意结点，编写一个函数求出从根结点到p所指结点之间路径。
+*/
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>

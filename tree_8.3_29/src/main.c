@@ -1,3 +1,8 @@
+/*
+Please write a function to get the count of all nodes leaf nodes and one child nodes.
+
+分别计算二叉树的结点个数、叶子结点数、单孩子结点数。
+*/
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>

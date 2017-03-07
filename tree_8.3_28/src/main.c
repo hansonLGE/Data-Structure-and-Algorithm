@@ -1,3 +1,8 @@
+/*
+Travel a binary tree by layer.
+
+按层次顺序（同一层次自左至右）遍历二叉树。
+*/
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>

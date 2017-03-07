@@ -1,3 +1,8 @@
+/*
+There is a binary tree which is stored by link. Please write a function to get all ancestors of the node in which the data is equal to x.
+
+在二叉树中查找值为x的结点，试设计打印值为x的节点的所有祖先算法，假设设值为x的结点不多于1个。
+*/
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>

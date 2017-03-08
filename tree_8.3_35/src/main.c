@@ -1,3 +1,9 @@
+/*
+There is a binary sort tree in which all elements are different. Please write a algorithm to print all elements by non-decreasing order
+or non-increasind order.
+
+二叉排序树的各个元素均不相同，设计一个算法按递增或递减次序打印各个元素。
+*/
 #include <stdio.h>
 #include <stdlib.h>
 #include<string.h>
@@ -68,7 +74,7 @@ int main(int argc, char** argv) {
 	bnode* head = NULL;
 	bnode* ptr = NULL;
 
-	printf("create a BST(example 62,88,58,47,35,73,51,99,37,93):\n");
+	printf("create a BST(example 62,88,58,47,35,73,51,99,37,93,-1):\n");
 	create(&head);
 	in_order(head);
 

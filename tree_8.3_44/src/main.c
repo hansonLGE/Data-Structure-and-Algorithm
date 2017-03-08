@@ -1,3 +1,6 @@
+/*
+create a BST based on a vector.
+*/
 #include <stdio.h>
 #include <stdlib.h>
 

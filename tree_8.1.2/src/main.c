@@ -73,7 +73,9 @@ void in_thread(bnode* p) {
 			pre->right = p;
 		}
 		else {
-			p->rtag = 0;
+			if (pre != NULL) {
+				pre->rtag = 0;
+			}
 		}
 
 		pre = p;

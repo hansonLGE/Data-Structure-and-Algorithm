@@ -1,4 +1,4 @@
-﻿生成启动时间为 2017/3/2 11:27:43。
+﻿生成启动时间为 2017/3/8 10:42:28。
      1>项目“D:\visual studio\projects\tree_8.1.2\proj_win32\tree_8.1.2\tree_8.1.2.vcxproj”在节点 2 上(Build 个目标)。
      1>ClCompile:
          D:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _LIB /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TC /analyze- /errorReport:prompt ..\..\src\main.c
@@ -12,4 +12,4 @@
 
 生成成功。
 
-已用时间 00:00:04.74
+已用时间 00:00:03.94

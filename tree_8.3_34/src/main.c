@@ -1,3 +1,9 @@
+/*
+Please write a algorithm to get successor of a node in the threaded binary tree by inorder, and then the tree would be traveled 
+by non-recursive inorder.
+
+编写出中序线索二叉树中任意结点的后继算法，并以此写出中序非递归遍历算法。
+*/
 #include <stdio.h>
 #include <stdlib.h>
 
@@ -26,7 +32,9 @@ void in_thread(bnode* ptr) {
 			pre->right = ptr;
 		}
 		else {
-			ptr->rtag = 0;
+			if (pre != NULL) {
+				pre->rtag = 0;
+			}
 		}
 
 		pre = ptr;

@@ -1,3 +1,8 @@
+/*
+Please a functiuon to create a graph based on adjacent matrix.
+
+采用邻接矩阵构建图
+*/
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
@@ -83,6 +88,8 @@ int main(int argc, char** argv) {
 		for (int j = 0; j < n; j++) {
 			printf("%d ", m_graph.edges[i][j]);
 		}
+
+		printf("\n");
 	}
 	printf("\n");
 

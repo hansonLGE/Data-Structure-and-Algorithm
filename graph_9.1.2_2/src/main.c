@@ -1,3 +1,8 @@
+/*
+Please write a function to create a graph based on adjacent list.
+
+采用邻接表构建图。
+*/
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>

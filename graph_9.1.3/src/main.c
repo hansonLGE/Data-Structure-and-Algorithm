@@ -1,3 +1,8 @@
+/*
+Depth-First-Search and Breadth-First-Search
+
+邻接表建立图，对其进行深度优先搜索和广度优先搜索。
+*/
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
@@ -153,12 +158,12 @@ void bfs(vexnode* g, int n, char x){
 	visited[i] = 1;
 	printf("%c ", g[i].data);
 
-	qu.rear++;
 	qu.data[qu.rear] = g[i].data;
+	qu.rear++;
 
 	while (qu.front < qu.rear) {
-		qu.front = (qu.front + 1) % MAXVEX;
 		val = qu.data[qu.front];
+		qu.front = (qu.front + 1) % MAXVEX;
 
 		j = 0;
 		while (j < n && g[j].data != val) {
@@ -171,8 +176,8 @@ void bfs(vexnode* g, int n, char x){
 				visited[p->idx] = 1;
 				printf("%c ", p->data);
 
-				qu.rear = (qu.rear+1) % MAXVEX;
 				qu.data[qu.rear] = p->data;
+				qu.rear = (qu.rear+1) % MAXVEX;
 			}
 
 			p = p->next;

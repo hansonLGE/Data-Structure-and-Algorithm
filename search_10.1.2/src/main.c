@@ -1,3 +1,8 @@
+/*
+binary search
+
+¶ş·Ö²éÕÒ
+*/
 #include <stdio.h>
 #include <stdlib.h>
 
@@ -16,7 +21,7 @@ int binsearch(int* vec, int key, int low, int high) {
 			return binsearch(vec, key, low, mid - 1);
 		}
 		else if (key > vec[mid]) {
-			return binsearch(vec, key, low + 1, high);
+			return binsearch(vec, key, mid + 1, high);
 		}
 		else {
 			return mid;
@@ -30,7 +35,7 @@ int main(int argc, char** argv) {
 	int key = 0;
 	int ret = 0;
 
-	printf("please input data size:");
+	printf("please input vector size:");
 	scanf("%d", &n);
 
 	for (int i = 0; i < n; i++) {

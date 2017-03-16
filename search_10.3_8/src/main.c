@@ -1,3 +1,8 @@
+/*
+Please write a function of inserting a new element to a ordered sequence. The new sequence is still ordered.
+
+编写一个函数，在一个有序列表中插入一个元素x，并保持表的有序性。
+*/
 #include <stdio.h>
 #include <stdlib.h>
 

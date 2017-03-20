@@ -1,3 +1,8 @@
+/*
+sort: insert, binary insert, bubble, quick, select, heap.
+
+排序：直接插入、二分插入、冒泡、快速、选择、堆
+*/
 #include <stdio.h>
 #include <stdlib.h>
 
@@ -185,7 +190,7 @@ int main(int argc, char** argv) {
 	int n = 0;
 	int vec[MAX] = { 0 };
 
-	printf("please input the size of a recoed:");
+	printf("please input the size of a record:");
 	scanf("%d", &n);
 
 	for (int i = 0; i < n; i++) {
